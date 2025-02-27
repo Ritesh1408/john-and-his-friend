@@ -17,7 +17,7 @@ function PrintDeveloperbyMap() {
 function PrintDeveloperbyForEach() {
   //Write your code here , just console.log
   arr.forEach((item) => {
-    if(item.profession == "developer")
+    if(item.profession.toLowerCase() === "developer")
       console.log(`ID : ${item.id}, Name : ${item.name}, Age: ${item.age}, Profession : ${item.profession}`)
     }
   );
